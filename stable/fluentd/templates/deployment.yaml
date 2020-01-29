@@ -1,5 +1,7 @@
 apiVersion: apps/v1
-{{- if .Values.autoscaling.enabled}}
+{{- if .Values.daemonset}}
+kind: DaemonSet
+{{- else if .Values.autoscaling.enabled}}
 kind: StatefulSet
 {{- else}}
 kind: Deployment

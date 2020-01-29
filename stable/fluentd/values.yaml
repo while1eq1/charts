@@ -37,6 +37,8 @@ extraEnvVars:
 #     mountPath: /certs
 #     readOnly: true
 
+daemonset: false
+
 plugins:
   enabled: false
   pluginsList: []
